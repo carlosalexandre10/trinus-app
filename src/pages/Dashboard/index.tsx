@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
   const download = useCallback(arquivo => {
     setTimeout(() => {
       const response = {
-        file: `http://localhost:3333/tmp/temp/${arquivo}`,
+        file: `https://trinus-api.herokuapp.com/tepm/${arquivo}`,
       };
       window.location.href = response.file;
     }, 100);
